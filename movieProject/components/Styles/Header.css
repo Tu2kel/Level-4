@@ -1,0 +1,156 @@
+/* * {
+  margin: 0;
+} */
+
+audio {
+  display: none;
+}
+
+.homeContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* .heading {
+  position: absolute;
+  font-size: 4rem;
+  color: aqua;
+  text-decoration-line: overline underline;
+  left: 4%;
+  top: 5vh;
+} */
+
+.heading {
+      position: absolute;
+      font-size: 4rem;
+      color: aqua;
+      left: 4%;
+      top: 5vh;
+      animation: shimmer 10s ease-in-out ;
+    }
+    
+    @keyframes shimmer {
+      0% { opacity: 1; text-shadow: none; }
+      50% { opacity: 0.5; text-shadow: 0 0 10px aqua, 0 0 20px aqua; }
+      100% { opacity: 1; text-shadow: none; }
+    }
+
+a{
+  color: rgb(9, 244, 244);
+  text-decoration-line: none;
+}  
+
+a:hover{
+  
+  text-decoration-line: underline;
+  color: red;
+
+}
+
+ul {
+  position: absolute;
+  top: 30%;
+  list-style-type: none;
+  background: transparent;
+  
+}
+
+li {
+  background: transparent;
+  
+}
+
+.generatedMovList {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 12vh;
+  column-gap: 12vh;
+  list-style: none;
+  position: absolute;
+  top: 55%;
+  background: transparent;
+  font-size: 1.5rem;
+
+}
+
+
+
+/* @media (max-width: 468px) {
+  .nav_Links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .nav_Links a {
+    margin: 5px 0;
+  }
+}
+
+a {
+  font-size: 1.3rem;
+  color: aqua;
+  }
+
+ .nav_Links {
+  bottom: 25%;
+  left: 85%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  gap: 2vw;
+  position: absolute;
+  top: 28vh;
+} */
+/*____________________________________________________*/
+
+@media (max-width: 389px) {
+  .nav_Links {
+    flex-shrink: inherit;
+  }
+
+  /* .nav_Links a {
+    flex: 1;
+    overflow: scroll;
+    margin: 5px 0;
+    width: 100%;
+  } */
+}
+
+
+
+nav .nav_Links a {
+  font-size: 1.3rem;
+  background:  linear-gradient(to right, rgba(255, 0, 0, 0.7), rgba(23, 22, 22, 0.757), rgba(0, 0, 255, 0.835));
+  padding: .3rem .5rem;
+  border-radius: 15px;
+  /* text-decoration: none; */
+  
+}
+
+
+
+.nav_Links {
+  display: flex;
+  left: 85%;
+  transform: translateX(-50%);
+  
+  justify-content: space-between;
+  gap: 3rem;
+
+  position: absolute;
+  top: 28dvh;
+}
+
+
+
+
+.youtube {
+  padding-top: 20vh;
+}

@@ -1,0 +1,26 @@
+.aboutBox{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50vh;
+}
+
+div .aboutBox{
+
+    width: 100%;
+
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    gap: 1rem;
+
+}
+
+.titles{
+    text-decoration: underline overline;
+}
+
+.plot{
+    font-size: 2rem;
+    font-style: italic;
+}

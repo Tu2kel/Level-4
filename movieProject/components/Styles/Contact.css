@@ -1,0 +1,74 @@
+
+.contactWrap{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50vh;
+    
+}
+
+div .contactWrap{
+
+    width: 100%;
+
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    gap: 1rem;
+    
+}
+
+.contact{
+    text-decoration: underline overline;
+    /* font-style: italic; */
+    font-stretch: extra-expanded;
+
+}
+
+.name{
+    font-size: 2rem;
+    font-style: italic;
+}
+
+.icon1, .icon2 /*.icon3, .icon4, .icon5 */ {
+  
+  filter: grayscale(95%);
+  height: 7dvh;
+  width: 12dvw;
+  cursor: pointer;
+    
+}
+
+@media (max-width: 389px) {
+
+}
+    .icon1{
+    position: absolute;
+    top: 25dvh;
+    /* margin-left: 40dvw; */
+    }
+
+    .icon2{
+    position: absolute;
+    top: 55dvh;
+    }
+
+    .icon1:hover {
+    
+        filter: none;
+        
+    }
+
+    .icon2:hover{
+    
+        filter: none;
+
+    } 
+
+    a > .icon1 {
+        margin-top: -3dvh;
+    }
+
+    a > .icon2 {
+        margin-top: -10dvh;
+    }
